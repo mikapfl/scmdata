@@ -28,7 +28,12 @@ def _assert_frame_equal(left, right, **kwargs):
 
 
 def assert_scmdf_almost_equal(
-    left: ScmRun, right: ScmRun, allow_unordered: bool =False, check_ts_names: bool=True, rtol: float=1e-5, atol: float=1e-8
+    left: ScmRun,
+    right: ScmRun,
+    allow_unordered: bool = False,
+    check_ts_names: bool = True,
+    rtol: float = 1e-5,
+    atol: float = 1e-8,
 ) -> None:
     """
     Check that left and right :class:`ScmRun <scmdata.run.ScmRun>` are equal.
